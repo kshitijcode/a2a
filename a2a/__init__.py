@@ -1,0 +1,1 @@
+from a2a.runner import GithubSpider
