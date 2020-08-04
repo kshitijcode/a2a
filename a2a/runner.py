@@ -1,3 +1,4 @@
+
 import argparse
 import scrapy
 from scrapy.crawler import CrawlerProcess
@@ -29,7 +30,7 @@ class GithubSpider(scrapy.Spider):
                     return
 
 
-if __name__ == "__main__":
+def runner():
     parser = argparse.ArgumentParser(description='Enter the values to fetch the corresponding service')
     parser.add_argument('service', type=str, help='Enter the name of service')
     args = parser.parse_args()
